@@ -28,42 +28,12 @@ export default function Home() {
 	}, [result])
 
 	return (
-		<main className="min-w-screen min-h-screen flex flex-col items-center gap-10">
+		<main className="w-screen h-screen flex flex-col items-center gap-8">
 			<nav className={'flex justify-between max-w-5xl w-full py-2 border-b-[1px]'}>
 				<div className={'flex gap-5 items-center'}>
 					<h4 className={'scroll-m-20 text-xl font-semibold tracking-tight text-black dark:text-white'}>
 						Пацанский translate
 					</h4>
-					{/*<Link*/}
-					{/*	to="home"*/}
-					{/*	spy={true}*/}
-					{/*	smooth={true}*/}
-					{/*	duration={500}*/}
-					{/*	activeClass={'text-white'}*/}
-					{/*	className={'text-muted-foreground'}*/}
-					{/*>*/}
-					{/*	Home*/}
-					{/*</Link>*/}
-					{/*<Link*/}
-					{/*	to="translate"*/}
-					{/*	spy={true}*/}
-					{/*	smooth={true}*/}
-					{/*	duration={500}*/}
-					{/*	activeClass={'text-white'}*/}
-					{/*	className={'text-muted-foreground'}*/}
-					{/*>*/}
-					{/*	Translate*/}
-					{/*</Link>*/}
-					{/*<Link*/}
-					{/*	to="examples"*/}
-					{/*	spy={true}*/}
-					{/*	smooth={true}*/}
-					{/*	duration={500}*/}
-					{/*	activeClass={'text-white'}*/}
-					{/*	className={'text-muted-foreground'}*/}
-					{/*>*/}
-					{/*	Examples*/}
-					{/*</Link>*/}
 				</div>
 				<DropdownMenu>
 					<DropdownMenuTrigger asChild>
@@ -93,12 +63,11 @@ export default function Home() {
 						каэсочке и ебашил с своим фирменным ником NAGIBATOR007? Появялось желание вернуть ту
 						уникальность твоего никнейма как в старые времена? Тогда этот сайт твой лучший друг!
 					</h4>
-					<Button className={'border-2 mt-auto'}>Поехали</Button>
 				</div>
 			</div>
 			<Separator className={'max-w-5xl'} />
 
-			<div className={'flex gap-5 max-w-5xl w-full'}>
+			<div className={'flex gap-5 max-w-5xl w-full h-full mb-4'}>
 				<Textarea
 					placeholder={'Пиши сюда'}
 					className="w-full"
